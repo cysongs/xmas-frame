@@ -60,7 +60,7 @@ export const app = new Frog<{ State: State }>({
   },
 });
 
-app.use("/*", serveStatic({ root: "./.frog" }));
+app.use("/*", serveStatic({ root: "/.frog" }));
 app.frame(PATH.HOME, HomePage);
 app.frame(PATH.TREE_HOME, TreeMain);
 app.frame(PATH.DECORATE, DecorateTree);
