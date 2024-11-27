@@ -73,7 +73,7 @@ app.transaction(PATH.DECORATE_TX, AdornTx);
 // @ts-ignore
 const isEdgeFunction = typeof EdgeFunction !== "undefined";
 // @ts-ignore
-const isProduction = isEdgeFunction || import.meta.env?.MODE !== "development";
+const isProduction = isEdgeFunction || import.meta.env?.MODE !== "development" || process.env.IS_PRODUCTION === "true";
 devtools(app, isProduction ? { assetsPath: "/.frog" } : { serveStatic });
 
 export const GET = handle(app);
