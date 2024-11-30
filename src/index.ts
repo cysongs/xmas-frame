@@ -60,7 +60,7 @@ export const app = new Frog<{ State: State }>({
   },
 });
 
-app.use("/*", serveStatic({ root: "/.frog" }));
+app.use('/*', serveStatic({ root: './public' }));
 app.frame(PATH.HOME, HomePage);
 app.frame(PATH.TREE_HOME, TreeMain);
 app.frame(PATH.DECORATE, DecorateTree);
@@ -74,7 +74,12 @@ app.transaction(PATH.DECORATE_TX, AdornTx);
 const isEdgeFunction = typeof EdgeFunction !== "undefined";
 // @ts-ignore
 const isProduction = isEdgeFunction || import.meta.env?.MODE !== "development" || process.env.IS_PRODUCTION === "true";
-devtools(app, isProduction ? { assetsPath: "/.frog" } : { serveStatic });
+// devtools 설정
+if (!isProduction) {
+  devtools(app, { serveStatic });
+}
 
 export const GET = handle(app);
 export const POST = handle(app);
+
+export default handle(app);
