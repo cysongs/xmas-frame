@@ -33,7 +33,7 @@ export interface State {
 export type EnvState = Env & { State: State };
 
 export const app = new Frog<{ State: State }>({
-  basePath: "/",
+  basePath: "https://xmas-frame-one.vercel.app",
   browserLocation: "/:path",
   // Supply a Hub to enable frame verification.
   hub: neynar({ apiKey: "NEYNAR_FROG_FM" }),
