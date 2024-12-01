@@ -1,11 +1,7 @@
 {
   "functions": {
-    "index.js": {
-      "runtime": "nodejs18.x",
-      "sourceFile": "src/index.ts"
+    "api/index.js": {
+      "runtime": "nodejs18.x"
     }
-  },
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.js" }
-  ]
+  }
 }

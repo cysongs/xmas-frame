@@ -1,15 +1,15 @@
 import { serveStatic } from "@hono/node-server/serve-static";
 import { Env, Frog } from "frog";
-import { vars } from "./ui";
+import { vars } from "../ui";
 import { devtools } from "frog/dev";
-import TreeMain from "./tree-view";
-import CreateTree from "./create-tree";
-import PATH from "./routes/path";
-import CreateTx from "./create-tree/createTx";
-import DecorateTree from "./decorate";
-import HomePage from "./main/main";
-import DecorateConfirm from "./decorate/confirm";
-import AdornTx from "./decorate/adornTx";
+import TreeMain from "../tree-view";
+import CreateTree from "../create-tree";
+import PATH from "../routes/path";
+import CreateTx from "../create-tree/createTx";
+import DecorateTree from "../decorate";
+import HomePage from "../main/main";
+import DecorateConfirm from "../decorate/confirm";
+import AdornTx from "../decorate/adornTx";
 import { handle } from "frog/next";
 import { neynar } from "frog/hubs";
 
