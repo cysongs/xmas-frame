@@ -12,7 +12,7 @@
     "jsxImportSource": "frog/jsx",
 
     /* Output Settings */
-    "outDir": ".vercel/output",
+    "outDir": ".vercel/output/functions/index.func",
 
     /* Linting */
     "strict": true,
