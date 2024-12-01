@@ -2,11 +2,11 @@ import PATH from "../routes/path";
 import { Button, FrameHandler } from "frog";
 import { BlankInput } from "hono/types";
 import { Box, Text } from "../ui";
-import { EnvState } from "..";
 import { CONFIGS } from "../configs";
 import { TreeSelector } from "./TreeSelector";
 import { genPath } from "../utils/genPath";
 import { getTree } from "../contracts/tree";
+import {EnvState} from "../api";
 
 const CreateTree: FrameHandler<
   EnvState,
