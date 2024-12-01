@@ -33,7 +33,7 @@ export interface State {
 export type EnvState = Env & { State: State };
 
 export const app = new Frog<{ State: State }>({
-  basePath: "https://xmas-frame-one.vercel.app",
+  basePath: "/",
   browserLocation: "/:path",
   // Supply a Hub to enable frame verification.
   hub: neynar({ apiKey: "NEYNAR_FROG_FM" }),
@@ -75,11 +75,8 @@ const isEdgeFunction = typeof EdgeFunction !== "undefined";
 // @ts-ignore
 const isProduction = isEdgeFunction || import.meta.env?.MODE !== "development" || process.env.IS_PRODUCTION === "true";
 // devtools 설정
-if (!isProduction) {
-  devtools(app, { serveStatic });
-}
+if (!isProduction) devtools(app, { serveStatic });
+else devtools(app, { assetsPath: '/.frog' })
 
 export const GET = handle(app);
 export const POST = handle(app);
-
-export default handle(app);
