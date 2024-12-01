@@ -76,7 +76,7 @@ const isEdgeFunction = typeof EdgeFunction !== "undefined";
 const isProduction = isEdgeFunction || import.meta.env?.MODE !== "development" || process.env.IS_PRODUCTION === "true";
 // devtools 설정
 if (!isProduction) devtools(app, { serveStatic });
-else devtools(app, { assetsPath: '/.frog' })
+else devtools(app, { assetsPath: '/static/.frog' })
 
 export const GET = handle(app);
 export const POST = handle(app);
