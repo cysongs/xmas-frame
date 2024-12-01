@@ -1,9 +1,5 @@
 {
-  "version": 2,
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "functions/index.func"
-    }
+    { "src": "/(.*)", "dest": "/index.js" }
   ]
 }
