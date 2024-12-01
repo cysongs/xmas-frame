@@ -1,3 +1,4 @@
+import 'tsconfig-paths/register';
 import { serveStatic } from "@hono/node-server/serve-static";
 import { Env, Frog } from "frog";
 import { vars } from "@src/ui";
