@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",           // 프로젝트 루트 기준으로 경로 설정
+    "paths": {
+      "@src/*": ["src/*"]     // src 디렉토리를 @src로 매핑
+    },
     "target": "ESNext",
     "module": "ESNext",
     "skipLibCheck": true,
@@ -23,5 +27,5 @@
     "rootDir": "./",
     "emitDeclarationOnly": false  // 타입 선언 파일만 생성하지 않도록 설정
   },
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["src/**/*", "api/**/*"]
 }
