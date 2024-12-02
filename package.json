@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "typechain": "typechain --target ethers-v6 --out-dir src/typechain src/abi/*.json",
-    "build": "npm run typechain && tsc && frog vercel-build && mkdir -p .vercel/output/functions/api/index.func && mv .vercel/output/functions/api/index.js .vercel/output/functions/api/index.func/index.js && echo '{\"runtime\":\"nodejs18.x\",\"handler\":\"index.js\",\"launcherType\":\"Nodejs\"}' > .vercel/output/functions/api/index.func/.vc-config",
+    "build": "npm run typechain && tsc && frog vercel-build && mv .vercel/output/functions/api/index.js .vercel/output/functions/api/index.func/index.js && mv .vercel/output/functions/src .vercel/output/functions/api",
     "dev": "frog dev",
     "deploy": "vercel"
   },
@@ -14,7 +14,6 @@
     "ethers": "^6.13.4",
     "frog": "latest",
     "hono": "^4",
-    "tsconfig-paths": "^4.2.0",
     "typechain": "^8.3.2"
   },
   "devDependencies": {
