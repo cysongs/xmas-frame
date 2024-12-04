@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": ".",           // 프로젝트 루트 기준으로 경로 설정
+    "paths": {
+      "@src/*": ["public/src/*"]
+    },
     "target": "ESNext",
     "module": "ESNext",
     "skipLibCheck": true,
