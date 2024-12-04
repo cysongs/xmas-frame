@@ -1,11 +1,6 @@
 {
-  "functions": {
-     "api/index.func/index.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "routes": [
     { "src": "/static/(.*)", "dest": "/static/$1" },
-    { "src": "/(.*)", "dest": "/api/index.func/index.js" }
+    { "src": "/(.*)", "dest": "/api/index.js" }
   ]
 }
