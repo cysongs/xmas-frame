@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "typechain": "typechain --target ethers-v6 --out-dir api/src/typechain api/src/abi/*.json",
-    "build": "npm run typechain && tsc && frog vercel-build && find .vercel/output/functions/api/src -name '*.func' -type d -exec rm -rf {} +",
+    "typechain": "typechain --target ethers-v6 --out-dir src/typechain src/abi/*.json",
+    "build": "npm run typechain && tsc && frog vercel-build",
     "dev": "frog dev",
     "deploy": "vercel"
   },
