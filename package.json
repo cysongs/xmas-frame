@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "typechain": "typechain --target ethers-v6 --out-dir api/src/typechain api/src/abi/*.json",
-    "build": "npm run typechain && tsc && frog vercel-build && mv .vercel/output/functions/api/index.js .vercel/output/functions/api/index.func/index.js && find .vercel/output/functions/api/src -name '*.func' -type d -exec rm -rf {} +",
+    "build": "npm run typechain && tsc && frog vercel-build && mv .vercel/output/functions/api/index.js .vercel/output/functions/api/index.func/index.js",
     "dev": "frog dev",
     "deploy": "vercel"
   },
