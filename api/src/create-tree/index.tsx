@@ -6,7 +6,7 @@ import { CONFIGS } from "../configs";
 import { TreeSelector } from "./TreeSelector";
 import { genPath } from "../utils/genPath";
 import { getTree } from "../contracts/tree";
-import {EnvState} from "../../api";
+import {EnvState} from "../../index";
 
 const CreateTree: FrameHandler<
   EnvState,
