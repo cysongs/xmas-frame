@@ -11,7 +11,7 @@
   ],
    "builds": [
     {
-      "src": "api/index.ts",
+      "src": "/(.*)",
       "use": "@vercel/node"
     }
   ]
