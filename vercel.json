@@ -8,5 +8,11 @@
       "src": "/static/(.*)",
       "dest": "/static/$1"
     }
+  ],
+   "builds": [
+    {
+      "src": "api/index.ts",
+      "use": "@vercel/node"
+    }
   ]
 }
