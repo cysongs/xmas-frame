@@ -8,11 +8,5 @@
       "src": "/static/(.*)",
       "dest": "/static/$1"
     }
-  ],
-   "builds": [
-    {
-      "src": "/(.*)",
-      "use": "@vercel/node"
-    }
   ]
 }
