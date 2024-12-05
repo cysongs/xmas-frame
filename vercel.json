@@ -2,7 +2,7 @@
   "builds": [
     { "src": "src/**/*.ts", "use": "@vercel/node" }
   ],
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run typechain && tsc && frog vercel-build",
   "routes": [
     {
       "src": "/(.*)",
