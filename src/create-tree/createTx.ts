@@ -1,6 +1,6 @@
 import { parseEther, TransactionHandler } from "frog";
-import { CONFIGS } from "../configs";
-import { XmasTree__factory } from "../typechain";
+import { CONFIGS } from "../configs.js";
+import { XmasTree__factory } from "../typechain/index.js";
 
 const CreateTx: TransactionHandler = (c) => {
   const bgId = c.req.param("bgId");

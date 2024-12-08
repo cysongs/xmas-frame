@@ -1,4 +1,4 @@
-import { Box, Image } from "../ui";
+import { Box, Image } from "../ui.js";
 
 interface TreeSelectorProps {
   no: number;

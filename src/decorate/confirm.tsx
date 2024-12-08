@@ -1,9 +1,9 @@
 import { Button, FrameHandler } from "frog";
-import PATH from "../routes/path";
+import PATH from "../routes/path.js";
 import { BlankInput } from "hono/types";
-import { Box, Image, Text } from "../ui";
-import { genPath } from "../utils/genPath";
-import { CONFIGS } from "../configs";
+import { Box, Image, Text } from "../ui.js";
+import { genPath } from "../utils/genPath.js";
+import { CONFIGS } from "../configs.js";
 import {EnvState} from "../../api";
 
 const DecorateConfirm: FrameHandler<

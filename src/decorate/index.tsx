@@ -1,10 +1,10 @@
 import { Button, FrameHandler, TextInput } from "frog";
-import PATH from "../routes/path";
+import PATH from "../routes/path.js";
 import { BlankInput } from "hono/types";
-import { Box } from "../ui";
-import { genPath } from "../utils/genPath";
-import { CONFIGS } from "../configs";
-import { DecoColItem } from "./DecorateColItem";
+import { Box } from "../ui.js";
+import { genPath } from "../utils/genPath.js";
+import { CONFIGS } from "../configs.js";
+import { DecoColItem } from "./DecorateColItem.js";
 import {EnvState} from "../../api";
 
 const DecorateTree: FrameHandler<

@@ -1,4 +1,4 @@
-import { Image } from "../ui";
+import { Image } from "../ui.js";
 
 interface OrnamentProps {
   position: number;

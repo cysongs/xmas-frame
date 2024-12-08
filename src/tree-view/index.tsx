@@ -1,12 +1,12 @@
 import { Button, FrameHandler } from "frog";
-import { Box } from "../ui";
-import { TreeBackground } from "./TreeBackground";
-import { PlainTree } from "./PlainTree";
-import { Ornament } from "./Ornament";
+import { Box } from "../ui.js";
+import { TreeBackground } from "./TreeBackground.js";
+import { PlainTree } from "./PlainTree.js";
+import { Ornament } from "./Ornament.js";
 import { BlankInput } from "hono/types";
-import PATH from "../routes/path";
-import { getTree } from "../contracts/tree";
-import { genPath } from "../utils/genPath";
+import PATH from "../routes/path.js";
+import { getTree } from "../contracts/tree.js";
+import { genPath } from "../utils/genPath.js";
 import {EnvState} from "../../api";
 
 const TreeMain: FrameHandler<EnvState, "/", BlankInput> = async (c) => {

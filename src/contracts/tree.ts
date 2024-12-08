@@ -1,6 +1,6 @@
-import { CONFIGS } from "../configs";
+import { CONFIGS } from "../configs.js";
 import { JsonRpcProvider } from "ethers";
-import { XmasTree__factory } from "../typechain";
+import { XmasTree__factory } from "../typechain/index.js";
 
 export const getTree = () => {
   return XmasTree__factory.connect(
