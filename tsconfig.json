@@ -26,6 +26,7 @@
   },
 //  "include": ["**/*.ts", "**/*.tsx", "**/*.mtsx"],
   "include": [
+    "api/**/*",      // `api` 디렉토리 포함
     "src/**/*",      // `src` 디렉토리 포함
     "src/typechain/**/*" // `typechain` 디렉토리 명시적 포함
   ]
