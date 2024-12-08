@@ -1,4 +1,5 @@
 {
+  "buildCommand": "npm run typechain",
   "builds": [
     {
       "src": "api/index.ts",
