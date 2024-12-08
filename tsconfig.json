@@ -22,7 +22,11 @@
     /* Output configuration */
     "outDir": ".vercel/output/functions/api", // Frog 기본 디렉토리와 일치
     "rootDir": "./",
-    "emitDeclarationOnly": false  // 타입 선언 파일만 생성하지 않도록 설정
+    "emitDeclarationOnly": false,  // 타입 선언 파일만 생성하지 않도록 설정
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.mtsx"]
+//  "include": ["**/*.ts", "**/*.tsx", "**/*.mtsx"],
+  "include": [
+    "src/**/*",      // `src` 디렉토리 포함
+    "src/typechain/**/*" // `typechain` 디렉토리 명시적 포함
+  ]
 }

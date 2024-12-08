@@ -5,6 +5,7 @@
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
+          "src/typechain/**/*",
           "src/**/*"
         ]
       }
