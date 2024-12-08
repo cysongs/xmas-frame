@@ -1,3 +1,4 @@
+console.log('entry')
 import { serveStatic } from "@hono/node-server/serve-static";
 import { Env, Frog } from "frog";
 import { vars } from "../src/ui";
@@ -31,7 +32,6 @@ export interface State {
 }
 
 export type EnvState = Env & { State: State };
-console.log('entry point');
 export const app = new Frog<{ State: State }>({
   basePath: "/",
   browserLocation: "/:path",
