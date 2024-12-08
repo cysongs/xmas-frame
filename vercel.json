@@ -1,14 +1,4 @@
 {
-  "buildCommand": "npm run typechain",
-  "builds": [
-    {
-      "src": "api/index.ts",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["src/**/*", "public/**/*"]
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
