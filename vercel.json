@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/index.js": {
-      "excludeFiles": "api/src/**/*"
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
