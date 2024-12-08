@@ -20,7 +20,7 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Output configuration */
-    "outDir": ".vercel/output/functions", // Frog 기본 디렉토리와 일치
+//    "outDir": ".vercel/output/functions", // Frog 기본 디렉토리와 일치
 //    "rootDir": "./",
 //    "emitDeclarationOnly": false,  // 타입 선언 파일만 생성하지 않도록 설정
   },
