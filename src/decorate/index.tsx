@@ -5,7 +5,7 @@ import { Box } from "../ui";
 import { genPath } from "../utils/genPath";
 import { CONFIGS } from "../configs";
 import { DecoColItem } from "./DecorateColItem";
-import {EnvState} from "../../index";
+import {EnvState} from "../../api";
 
 const DecorateTree: FrameHandler<
   EnvState,
