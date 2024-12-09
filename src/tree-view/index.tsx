@@ -7,7 +7,7 @@ import { BlankInput } from "hono/types";
 import PATH from "../routes/path.js";
 import { getTree } from "../contracts/tree.js";
 import { genPath } from "../utils/genPath.js";
-import {EnvState} from "../../main";
+import {EnvState} from "../../api/main";
 
 const TreeMain: FrameHandler<EnvState, "/", BlankInput> = async (c) => {
   const { deriveState, req } = c;

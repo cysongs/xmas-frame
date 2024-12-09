@@ -3,7 +3,7 @@ import { Button, FrameHandler } from "frog";
 import { BlankInput } from "hono/types";
 import { Image } from "../ui.js";
 import { genPath } from "../utils/genPath.js";
-import {EnvState} from "../../main";
+import {EnvState} from "../../api/main";
 
 const HomePage: FrameHandler<EnvState, typeof PATH.HOME, BlankInput> = async (
   c
