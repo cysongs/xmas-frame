@@ -1,15 +1,15 @@
 import { serveStatic } from "@hono/node-server/serve-static";
 import { Env, Frog } from "frog";
-import { vars } from "../../src/ui";
+import { vars } from "../src/ui";
 import { devtools } from "frog/dev";
-import TreeMain from "../../src/tree-view";
-import CreateTree from "../../src/create-tree";
-import PATH from "../../src/routes/path";
-import CreateTx from "../../src/create-tree/createTx";
-import DecorateTree from "../../src/decorate";
-import HomePage from "../../src/main/main";
-import DecorateConfirm from "../../src/decorate/confirm";
-import AdornTx from "../../src/decorate/adornTx";
+import TreeMain from "../src/tree-view";
+import CreateTree from "../src/create-tree";
+import PATH from "../src/routes/path";
+import CreateTx from "../src/create-tree/createTx";
+import DecorateTree from "../src/decorate";
+import HomePage from "../src/main/main";
+import DecorateConfirm from "../src/decorate/confirm";
+import AdornTx from "../src/decorate/adornTx";
 import { handle } from "frog/next";
 import { neynar } from "frog/hubs";
 
@@ -33,7 +33,7 @@ export interface State {
 export type EnvState = Env & { State: State };
 export const app = new Frog<{ State: State }>({
   basePath: "/",
-  browserLocation: "/:path",
+  // browserLocation: "/:path",
   // Supply a Hub to enable frame verification.
   hub: neynar({ apiKey: "NEYNAR_FROG_FM" }),
   title: "X-MAS Frame",
