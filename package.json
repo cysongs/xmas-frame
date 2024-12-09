@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "typechain": "typechain --target ethers-v6 --out-dir src/typechain src/abi/*.json",
-    "build": "tsc && frog vercel-build",
+    "build": "tsc && frog vercel-build && mv .vercel/dist/src .vercel/output/functions/api/index.func",
     "dev": "frog dev",
     "deploy": "vercel"
   },
@@ -14,7 +14,8 @@
     "ethers": "^6.13.4",
     "frog": "latest",
     "hono": "^4",
-    "typechain": "^8.3.2"
+    "typechain": "^8.3.2",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "replace-in-file": "^8.2.0",
