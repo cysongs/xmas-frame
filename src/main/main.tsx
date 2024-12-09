@@ -19,7 +19,7 @@ const HomePage: FrameHandler<EnvState, typeof PATH.HOME, BlankInput> = async (
       //   background="background200"
       //   position="relative"
       // ></Box>
-      <Image src="/static/cover.png" width="100%" height="100%" />
+      <Image src="/static/cover.png" width="1200" height="630" />
     ),
     intents: [
       <Button action={genPath(PATH.TREE_HOME, { id: "1" })}>Example</Button>,
