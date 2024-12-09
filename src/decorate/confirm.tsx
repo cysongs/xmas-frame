@@ -4,7 +4,7 @@ import { BlankInput } from "hono/types";
 import { Box, Image, Text } from "../ui.js";
 import { genPath } from "../utils/genPath.js";
 import { CONFIGS } from "../configs.js";
-import {EnvState} from "../../api";
+import {EnvState} from "../../main";
 
 const DecorateConfirm: FrameHandler<
   EnvState,
