@@ -25,7 +25,7 @@ export const TreeSelector = ({ no }: TreeSelectorProps) => {
             <Image borderRadius="16" src={`/bg/bg-${no}.png`} />
           </Box>
         )}
-        <Image src="/tree.png" height="100%" />
+        <Image src="/static/tree.png" height="100%" />
       </Box>
     </Box>
   );
