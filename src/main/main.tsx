@@ -10,7 +10,8 @@ const HomePage: FrameHandler<EnvState, typeof PATH.HOME, BlankInput> = async (
 ) => {
   return c.res({
     imageAspectRatio: "1.91:1",
-    image: (
+    image: <Image src="/static/tree.png" width="100%" height="100%" />,
+    /*image: (
       // <Box
       //   grow
       //   flexDirection="column"
@@ -20,7 +21,7 @@ const HomePage: FrameHandler<EnvState, typeof PATH.HOME, BlankInput> = async (
       //   position="relative"
       // ></Box>
       <Image src="https://xmas-frame-nu.vercel.app/static/cover.png" width="100%" height="100%" />
-    ),
+    ),*/
     intents: [
       <Button action={genPath(PATH.TREE_HOME, { id: "1" })}>Example</Button>,
       <Button action={PATH.CREATE_TREE}>Create Tree</Button>,
