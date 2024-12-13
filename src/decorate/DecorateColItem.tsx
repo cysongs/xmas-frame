@@ -6,6 +6,7 @@ interface DecoColItem {
   price: string;
 }
 export const DecoColItem = ({ index, uri, price }: DecoColItem) => {
+  console.log(index + ' ' + uri + ' ' + price)
   return (
     <Box
       key={index}
