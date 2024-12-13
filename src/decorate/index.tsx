@@ -36,9 +36,10 @@ const DecorateTree: FrameHandler<
   const count = Math.min(decorate.ornCount - ornIdStart + 1, PAGE_ITEM_COUNT);
 
   const orns = new Array(count).fill(0).map((_, i) => {
+    const timestamp = Date.now(); // 현재 시간을 기준으로 캐시 방지
     return {
       index: ornIdStart + i,
-      uri: `/static/ornaments/${ornIdStart + i}.png`,
+      uri: `/static/ornaments/${ornIdStart + i}.png?cache-bust=${timestamp}`,
     };
   });
 
